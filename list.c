@@ -54,3 +54,14 @@ void print(CallList list) {
                 }
         }
 }
+
+// A function to check if an item is already in a list
+int check(int item, CallList *list) {
+        int i;
+        for (i = 0; i < list->maxSize; i++) {
+                if (list->entries[i] == item) {
+                        return 1;
+                }
+        }
+        return 0;
+}
